@@ -1,0 +1,123 @@
+﻿body {
+  font-family: Arial, sans-serif;
+}
+
+code,
+kbd {
+  font-size: larger;
+}
+
+address {
+  font-style: normal;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #070;
+}
+
+a:active {
+  color: #0a0;
+}
+
+.print {
+  display: none;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.portrait img {
+  width: 320px;
+  max-width: 100%;
+}
+
+#main {
+  text-align: justify;
+}
+
+#sidebar,
+#header h1 {
+  margin: 0;
+}
+
+#header {
+  margin: 0 0 2em;
+}
+
+#header h1 {
+  font-family: 'Gloria Hallelujah', Arial, sans-serif;
+  text-transform: lowercase;
+}
+
+#header h1 a {
+  text-decoration: none;
+}
+
+  /* Print media */
+
+@media print {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .print {
+    display: block;
+  }
+
+  footer,
+  hr,
+  .portrait {
+    display: none;
+  }
+
+  #experience {
+    page-break-before: always;
+         break-before: always;
+         break-before: page;
+  }
+}
+
+  /* Desktop media */
+
+@media screen and (min-width: 1224px) {
+  .content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 680px;
+    left: -180px;
+  }
+
+  #footer {
+    margin: 1em auto;
+  }
+
+  #sidebar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 360px;
+  }
+
+  .portrait img,
+  #sidebar::after {
+    width: 260px;
+    max-width: none;
+  }
+
+  #sidebar::after {
+    content: '';
+    top: 50%;
+    height: 300%;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(to bottom, #ada, #fff);
+  }
+}
