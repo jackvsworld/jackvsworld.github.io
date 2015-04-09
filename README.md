@@ -1,4 +1,3 @@
-jackvsworld.github.com
-======================
-
-My personal homepage on GitHub Pages.
+jackvsworld.github.io
+=====================
+My personal homepage on GitHub.
