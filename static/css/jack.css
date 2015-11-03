@@ -78,10 +78,10 @@ a:active {
     display: none;
   }
 
-  #experience {
-    page-break-before: always;
-         break-before: always;
-         break-before: page;
+  main :not(section) {
+      page-break-after: avoid;
+      page-break-before: avoid;
+      page-break-inside: avoid;
   }
 }
 
