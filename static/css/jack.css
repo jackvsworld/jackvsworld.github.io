@@ -11,6 +11,10 @@ address {
   font-style: normal;
 }
 
+progress {
+  display: none;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -74,6 +78,7 @@ a:active {
 
   footer,
   hr,
+  progress,
   .portrait {
     display: none;
   }
@@ -88,6 +93,17 @@ a:active {
   /* Desktop media */
 
 @media screen and (min-width: 1224px) {
+  .skill {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .skill .tech,
+  .skill progress {
+    flex: 1;
+    display: inline-block;
+  }
+
   .content {
     position: relative;
     margin: 0 auto;
