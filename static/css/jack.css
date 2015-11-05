@@ -107,12 +107,12 @@ a:active {
   }
 
   .portrait img,
-  #sidebar::after {
+  #sidebar.shelf::after {
     width: 260px;
     max-width: none;
   }
 
-  #sidebar::after {
+  #sidebar.shelf::after {
     content: '';
     top: 50%;
     height: 300%;
